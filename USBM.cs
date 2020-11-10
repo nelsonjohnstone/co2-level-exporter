@@ -126,16 +126,6 @@ namespace co2_level_exporter
 
         public bool OpenDevice()
         {
-            USBM.DEV_BROADCAST_DEVICEINTERFACE broadcastDeviceinterface = new USBM.DEV_BROADCAST_DEVICEINTERFACE()
-            {
-                dbcc_devicetype = 5
-            };
-            broadcastDeviceinterface.dbcc_size = (uint)Marshal.SizeOf((object)broadcastDeviceinterface);
-            broadcastDeviceinterface.dbcc_reserved = 0U;
-            broadcastDeviceinterface.dbcc_classguid = this.InterfaceClassGuid;
-            IntPtr zero = IntPtr.Zero;
-            IntPtr ptr = Marshal.AllocHGlobal(Marshal.SizeOf((object)broadcastDeviceinterface));
-            Marshal.StructureToPtr(broadcastDeviceinterface, ptr, false);
             if (this.CheckIfPresentAndGetUSBDevicePath())
             {
                 this.WriteHandleToUSBDevice = USBM.CreateFile(this.DevicePath, 1073741824U, 3U, IntPtr.Zero, 3U, 0U, IntPtr.Zero);
