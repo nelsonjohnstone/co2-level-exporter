@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "co2-level-exporter", "co2-level-exporter.csproj", "{73221664-585D-4346-A84C-B1560419499B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73221664-585D-4346-A84C-B1560419499B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73221664-585D-4346-A84C-B1560419499B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73221664-585D-4346-A84C-B1560419499B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73221664-585D-4346-A84C-B1560419499B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65309C38-7DDF-40CB-8E7F-A2FD201A8489}
+	EndGlobalSection
+EndGlobal
